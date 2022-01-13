@@ -1,0 +1,7 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name, input_html: { autocomplete: 'off' } %>
+  <%= f.input :address, input_html: { autocomplete: 'off' } %>
+  <%= f.input :phone_number, input_html: { autocomplete: 'off' } %>
+  <%= f.select :category, options_for_select(["Chinese", "Italian", "Japanese", "French", "Belgian"])%>
+  <%= f.submit %>
+<% end %>
