@@ -5,7 +5,7 @@ puts "Deleting previous data..."
     name: Faker::Restaurant.name,
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.cell_phone,
-    category: ["Chinese", "Italian", "Japanese", "French", "Belgian"].sample
+    category: ["chinese", "italian", "japanese", "french", "belgian"].sample
   )
 end
 
